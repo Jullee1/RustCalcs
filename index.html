@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RustCalcs</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+<div id="overlay-top"></div>
+<div id="particles-js"></div>
+<div id="changelog-modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-title">Changelog</div>
+    <p>🛠️ Initial release of RustCalcs with:</p>
+    <ul style="text-align: left; margin-top: 1em; line-height: 1.6;">
+      <li>- Recycling Calculator (Comps, Explosives and F1 Grenades)</li>
+      <li>- Explosives Calculator</li>
+      <li>- Max Craft Calculator</li>
+      <li>- Raid Cost Calculator</li>
+      <li>- Wipe summary to summarize a wipe progress</li>
+    </ul>
+    <button id="close-changelog" class="glass-btn small" style="margin-top: auto;">Close</button>
+  </div>
+</div>
+
+<div class="container">
+  <div id="home">
+    <h1 id="main-title">RustCalcs</h1>
+    <p class="subtitle">Your all-in-one toolkit for Rust.</p>
+    <div class="button-grid">
+      <button class="glass-btn" onclick="navigate('recycling')">Recycling</button>
+      <button class="glass-btn" onclick="navigate('explosives')">Explosives</button>
+      <button class="glass-btn" onclick="navigate('maxcraft')">Max Craft</button>
+      <button class="glass-btn" onclick="navigate('raid')">Raid Cost</button>
+      <button class="glass-btn" onclick="navigate('wipe')">Wipe Summary</button>
+    </div>
+  </div>
+
+  <div id="tab-content" class="hidden">
+    <h1 id="tab-title">TAB</h1>
+    <div id="tab-body">
+      <!-- Recycling tab content will go here -->
+    </div>
+    <button id="back-btn" class="glass-btn small">← Back to Home</button>
+  </div>
+<div id="overlay-bottom">
+  <span>RustCalcs V1.0 - Made by Jullee</span>
+</div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
