@@ -142,7 +142,7 @@ function loadRecycling(container) {
         <div class="components-container">
           <div class="component"><img src="icons/gears.png"><input type="number" id="gears" min="0" value="0"></div>
           <div class="component"><img src="icons/metalBlade.png"><input type="number" id="metalBlade" min="0" value="0"></div>
-          <div class="component"><img src="icons/metalPipe.png"><input type="number" id="metalPipe" min="0" value="0"></div>
+          <div class="component"><img src="icons/metalpipe.png"><input type="number" id="metalPipe" min="0" value="0"></div>
           <div class="component"><img src="icons/metalSpring.png"><input type="number" id="metalSpring" min="0" value="0"></div>
           <div class="component"><img src="icons/roadSigns.png"><input type="number" id="roadSigns" min="0" value="0"></div>
           <div class="component"><img src="icons/semiBody.png"><input type="number" id="semiBody" min="0" value="0"></div>
@@ -198,7 +198,7 @@ function loadRecycling(container) {
               <div class="f1-result"><img src="icons/gunpowder.png"><span id="outGP">0</span></div>
               <div class="f1-result"><img src="icons/sulfur.png"><span id="outSulfur">0</span></div>
               <div class="f1-result"><img src="icons/frags.png"><span id="outFrags">0</span></div>
-              <div class="f1-result"><img src="icons/metalPipe.png"><span id="outPipes">0</span></div>
+              <div class="f1-result"><img src="icons/metalpipe.png"><span id="outPipes">0</span></div>
               <div class="f1-result"><img src="icons/cloth.png"><span id="outCloth">0</span></div>
               <div class="f1-result"><img src="icons/ttrash.png"><span id="outTrash">0</span></div>
               <div class="f1-result"><img src="icons/lgf.png"><span id="outLGF">0</span></div>
