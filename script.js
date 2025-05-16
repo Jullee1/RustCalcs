@@ -366,13 +366,16 @@ function updateF1Totals() {
   const useSafezone = document.getElementById("f1SafezoneCheckbox").checked;
   const scrapInput = parseInt(document.getElementById("gpScrapInput").value) || 0;
 
-  // Example F1 recycling logic:
-  // Assume 15 scrap = 1 F1 grenade = 30 gunpowder + 15 frags (adjust as needed)
-  const grenades = Math.floor(scrapInput / 15);
-  const stacks = Math.floor(grenades / 20); // assuming stack of 20
+  // Recycle rates
+  const gpPerF1 = useSafezone ? 12 : 18;
+  const fragsPerF1 = useSafezone ? 10 : 15;
+  const scrapPerF1 = 15;
 
-  document.getElementById("gpTotal").textContent = grenades * 30;  // gunpowder
-  document.getElementById("gpFragsTotal").textContent = grenades * 15;
+  const grenades = Math.floor(scrapInput / scrapPerF1);
+  const stacks = Math.floor(grenades / 20);
+
+  document.getElementById("gpTotal").textContent = grenades * gpPerF1;
+  document.getElementById("gpFragsTotal").textContent = grenades * fragsPerF1;
   document.getElementById("f1Count").textContent = grenades;
   document.getElementById("f1Stacks").textContent = stacks;
 }
